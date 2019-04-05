@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Friend Finder Survey</h1>
+            <hr>
+            <form action="post" autocomplete="off">
+                <br>
+                <h4>Name (Required)</h4>
+                <input type="text" id="name" class="form-control" required>
+                <br>
+                <h4>Link to Photo Image (Required)</h4>
+                <input type="text" id="photo" class="form-control" required>
+                <br>
+                <h4>Question 1</h4>
+                <p>Your mind is always buzzing with unexplored ideas and plans.</p>
+                <select class="chosen-select" id="q1">
+                    <option value="0">No opinion / Not sure</option>
+                    <option value="2">Strongly agree</option>
+                    <option value="1">Agree</option>
+                    <option value="-1">Disagree</option>
+                    <option value="-2">Strongly disagree</option>
+                </select>
+                <br>
+                <br>
+                <h4>Question 2</h4>
+                <p>Generally speaking, you rely more on your experience than your imagination.</p>
+                <select class="chosen-select" id="q2">
+                    <option value="0">No opinion / Not sure</option>
+                    <option value="2">Strongly agree</option>
+                    <option value="1">Agree</option>
+                    <option value="-1">Disagree</option>
+                    <option value="-2">Strongly disagree</option>
+                </select>
+                <br>
+                <br>
+                <h4>Question 3</h4>
+                <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
+                <select class="chosen-select" id="q3">
+                    <option value="0">No opinion / Not sure</option>
+                    <option value="2">Strongly agree</option>
+                    <option value="1">Agree</option>
+                    <option value="-1">Disagree</option>
+                    <option value="-2">Strongly disagree</option>
+                </select>
+                <br>
+                <br>
+                <h4>Question 4</h4>
+                <p>You rarely do something just out of sheer curiosity.</p>
+                <select class="chosen-select" id="q4">
+                    <option value="0">No opinion / Not sure</option>
+                    <option value="2">Strongly agree</option>
+                    <option value="1">Agree</option>
+                    <option value="-1">Disagree</option>
+                    <option value="-2">Strongly disagree</option>
+                </select>
+                <br>
+                <br>
+                <h4>Question 5</h4>
+                <p>People can rarely upset you.</p>
+                <select class="chosen-select" id="q5">
+                    <option value="0">No opinion / Not sure</option>
+                    <option value="2">Strongly agree</option>
+                    <option value="1">Agree</option>
+                    <option value="-1">Disagree</option>
+                    <option value="-2">Strongly disagree</option>
+                </select>
+                <br>
+                <br>
+                <h4>Question 6</h4>
+                <p>It is often difficult for you to relate to other people’s feelings.</p>
+                <select class="chosen-select" id="q6">
+                    <option value="0">No opinion / Not sure</option>
+                    <option value="2">Strongly agree</option>
+                    <option value="1">Agree</option>
+                    <option value="-1">Disagree</option>
+                    <option value="-2">Strongly disagree</option>
+                </select>
+                <br>
+                <br>
+                <h4>Question 7</h4>
+                <p>In a discussion, truth should be more important than people’s sensitivities.</p>
+                <select class="chosen-select" id="q7">
+                    <option value="0">No opinion / Not sure</option>
+                    <option value="2">Strongly agree</option>
+                    <option value="1">Agree</option>
+                    <option value="-1">Disagree</option>
+                    <option value="-2">Strongly disagree</option>
+                </select>
+                <br>
+                <br>
+                <h4>Question 8</h4>
+                <p>You rarely get carried away by fantasies and ideas.</p>
+                <select class="chosen-select" id="q8">
+                    <option value="0">No opinion / Not sure</option>
+                    <option value="2">Strongly agree</option>
+                    <option value="1">Agree</option>
+                    <option value="-1">Disagree</option>
+                    <option value="-2">Strongly disagree</option>
+                </select>
+                <br>
+                <br>
+                <h4>Question 9</h4>
+                <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
+                <select class="chosen-select" id="q9">
+                    <option value="0">No opinion / Not sure</option>
+                    <option value="2">Strongly agree</option>
+                    <option value="1">Agree</option>
+                    <option value="-1">Disagree</option>
+                    <option value="-2">Strongly disagree</option>
+                </select>
+                <br>
+                <br>
+                <h4>Question 10</h4>
+                <p>You feel more energetic after spending time with a group of people.</p>
+                <select class="chosen-select" id="q10">
+                    <option value="0">No opinion / Not sure</option>
+                    <option value="2">Strongly agree</option>
+                    <option value="1">Agree</option>
+                    <option value="-1">Disagree</option>
+                    <option value="-2">Strongly disagree</option>
+                </select>
+                <br>
+                <br>
+                <a href="#" class="btn btn-primary">Find a friend</a>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
