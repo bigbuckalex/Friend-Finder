@@ -22,7 +22,6 @@ module.exports = function(app){
             difference = 0;
             console.log("current best friend: "+bestFriend.name);
         }
-
         friendsData.push(userData);
         console.log("after push: "+JSON.stringify(friendsData[0]));
         res.json(bestFriend);
